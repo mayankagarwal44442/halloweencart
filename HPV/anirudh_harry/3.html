@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 <style>
-	:root{
-	--primary:#ddd;
-	--dark:#333;
-	--light:#fff;
-	--shadow:0 1px 5px rgba(104,104,104,0.8);
-	}
-	
+
 	html{
-	box-sizing:border-box;
-	font-family:Arial,Helvetica,sans-serif;
-	color:var(--dark);
+	font-family:sans-serif;
+	color:#333;
 	}
 	
 	body{
-		/*background:#30343a;*/
 		background:url('412.jpeg');
 		margin:30px 50px;
-		line-height:1.4;
 	}
 	
 	.btn{
-		background:var(--dark);
-		color:var(--light);
+		background:#333;
+		color:#fff;
 		padding:0.6rem 1.3rem;
-		text-decoration:none;
-		border:0;
+		text-decoration:none;/*to remove the underline*/
 	}
 	
 	img{
@@ -51,20 +39,20 @@
 	}
 	
 	.main-nav a{
-		background:var(--primary);
+		background:#ddd;
 		display:block;
 		text-decoration:none;
 		padding:0.8rem;
 		text-align:center;
-		color:var(--dark);
+		color:#333;
 		text-transform:uppercase;
 		font-size:1.1rem;
-		box-shadow:var(--shadow);
+		box-shadow:0 1px 5px rgba(104,104,104,0.8);
 	}
 	
 	.main-nav a:hover{
-		background: var(--dark);
-		color:var(--light);	
+		background:#333;
+		color:#fff;	
 	}
 
 	.top-container{
@@ -86,27 +74,27 @@
 		flex-direction:column;
 		align-items:start;
 		justify-content:center;
-		box-shadow:var(--shadow);
+		box-shadow:0 1px 5px rgba(104,104,104,0.8);
 	}
 	
 	.showcase h1{
 		font-size:4rem;
 		margin-bottom:0;
-		color:var(--light);
+		color:#fff;
 	}
 	
 	.showcase p{
 		font-size:1.3rem;
 		margin-top:0;
-		color:var(--light);	
+		color:#fff;	
 	} 
 	
 	.top-box{
-	background:var(--primary);
+	background:#ddd;
 	display:grid;
 	align-items:center;
 	justify-items:center;
-	box-shadow:var(--shadow);
+	box-shadow:0 1px 5px rgba(104,104,104,0.8);
 	padding:1rem;
 	}
 
@@ -121,15 +109,15 @@
 	}
 	/*puts the individual content into a box*/
 	.box{
-		background: var(--primary);
+		background:#ddd;
 		text-align:center;
 		padding:1rem;
-		box-shadow:var(--shadow);
+		box-shadow:0 1px 5px rgba(104,104,104,0.8);
 	}
 
 	.info{
-		background:var(--primary);
-		box-shadow:var(--shadow);
+		background:#ddd;
+		box-shadow:0 1px 5px rgba(104,104,104,0.8);
 		display:grid;
 		grid-gap:30px;
 		grid-template-columns:repeat(2,1fr);
@@ -150,13 +138,13 @@
 
 	.portfolio img{
 		width:100%;
-		box-shadow:var(--shadow);	
+		box-shadow:0 1px 5px rgba(104,104,104,0.8);	
 	}
 
 	footer{
 		margin-top:2rem;
-		background:var(--dark);
-		color:var(--light);
+		background:#333;
+		color:#fff;
 		text-align:center;
 		padding:1rem;	
 	}
@@ -167,23 +155,23 @@
 		<nav class="main-nav">
 			<ul>
 				<li>
-					<a href="">Home</a>
+					<a href="">HOME</a>
 				</li>
 				<li>
-					<a href="quiz.html">Quiz</a>
+					<a href="">ABOUT</a>
 				</li>
 				<li>
-					<a href="sale.html">Merchandise</a>
+					<a href="">SERVICES</a>
 				</li>
 				<li>
-					<a href="ctus.html">Contact US</a>
+					<a href="">CONTACT</a>
 				</li>
 			</ul>
 		</nav>
 	<!--top container-->
 	<section class="top-container">
 		<header class="showcase">
-		<h1>Harry Potter</h1>
+		<h1>your web presence</h1>
 		<p>
 Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that will consist of five films started with Fantastic Beasts and Where to Find Them (2016), marking the beginning of the Wizarding World shared media franchise
 		</p>
@@ -217,6 +205,13 @@ Harry Potter is a British-American film series based on the Harry Potter novels 
 		</p>
 		</div>
 		<div class="box">
+		<i class="fas fa-cogs fa-4x"></i>
+		<h3>Development</h3>
+		<p>
+Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner 
+		</p>
+		</div>
+		<div class="box">
 		<i class="fas fa-users fa-4x"></i>
 		<h3>Support</h3>
 		<p>
@@ -229,7 +224,7 @@ Harry Potter is a British-American film series based on the Harry Potter novels 
 	<section class="info">
 		<img src="2.jpg">
 		<div>
-		<h2>INFO</h2>
+		<h2>Your bussiness on the web page</h2>
 		<p>Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that will consist of five films started with Fantastic Beasts and<p>
 		<a href="" class="btn">learn more</a>
 	</div>

@@ -136,6 +136,8 @@ ul#nav li a:hover:not(.active) {
   width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
   padding: 10px; /* if you want space between the images */
   height:200px;
+
+
 }
 
 
@@ -145,6 +147,7 @@ ul#nav li a:hover:not(.active) {
   width: 25%; /* three boxes (use 25% for four, and 50% for two, etc) */
   padding: 10px; /* if you want space between the images */	
   height:200px;
+
 }
 
 .description h2

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+ul#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;                   /*What to do if there is an overflow? , we don't expect any, so we have made it hidden*/
+    /* other options: hidden,scroll,auto*/
+    background-color: blue;
+    position: fixed;    /* stays in the same place irrespective of scrolling*/
+    /* other options:   static 
+                        relative - relative to normal position
+                        fixed - relative to viewport
+                        absolute-relative to ancestor 
+                        sticky - sticks after offset
+    */
+    top: 0;         /* related to viewport , so 0px between top and viewport*/
+    width: 100%;
+    z-index: 2;
+}
+
+ul#nav li {
+    float: left;
+}
+
+ul#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #111;
+}
+
+#submit_button
+{
+    padding:10px;
+    background-color:yellow;
+}
+
+.bg {
+    
+    background-image: url("img3.jpg");
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 250px;
+
+}
+
+
+.h1
+{
+    /*position:absolute;  relative to ancestor*/
+
+
+}
+
+.container
+{
+    position:absolute;  /*related to normal position*/
+    left:5%;
+    background: blue;
+    background: rgba(0,0,0,0.5);
+    color:#f1f1f1;
+    top:10%;
+
+
+
+
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <br>
+    <br>
+
+
+    <ul id="nav">
+      <li ><a  href="home1.html">Home</a></li>
+      <li><a href="goodies.html">Goodies</a></li>
+      <li><a class="active" href="trivia.html">Trivia</a></li>
+      <li><a  href="books.html">Books</a></li>
+
+    </ul>
+
+    <div class="container">
+        <h1>The Avengers Quiz</h1>
+
+        <form action="trivia.php" method="post">
+            <div class="form">
+
+                <div class="quesition">
+                    <p>1. Who plays the character of Everett K. Ross in Civil war</p>
+                        
+                          <input  class="radio" type="radio" name="option1" value="Martin_Freeman" > Martin Freeman<br>
+                          <input class="radio" type="radio" name="option1" value="Bennedict_Cumberbatch"> Bennedict Cumberbatch<br>
+                          <input class="radio" type="radio" name="option1" value="Tom_Hanks"> Tom Hanks</br>
+                          <input class="radio" type="radio" name="option1" value="Joe_Russo"> Joe Russo</br>
+                                
+
+                </div>
+
+                <div class="quesition">
+                    <p>2. Which director of MCU has appeared in civil war</p>
+                        
+                          <input  class="radio" type="radio" name="option2" value="Martin_Freeman" > Martin Freeman<br>
+                          <input class="radio" type="radio" name="option2" value="Bennedict_Cumberbatch"> Bennedict Cumberbatch<br>
+                          <input class="radio" type="radio" name="option2" value="Tom_Hanks"> Tom Hanks</br>
+                          <input class="radio" type="radio" name="option2" value="Joe_Russo"> Joe Russo</br>
+                                
+
+                </div>
+
+                <div class="quesition">
+                    <p>3. Which energy was conserved in Black Panther's suit</p>
+                        
+                          <input  class="radio" type="radio" name="option3" value="Martin_Freeman" > Kinetic<br>
+                          <input class="radio" type="radio" name="option3" value="Bennedict_Cumberbatch"> Potential<br>
+                          <input class="radio" type="radio" name="option3" value="Tom_Hanks"> Gravitational</br>
+                          <input class="radio" type="radio" name="option3" value="Joe_Russo"> Superficial</br>
+                                
+
+                </div>
+
+                <div class="quesition">
+                    <p>4. Spoiler alert! Who is going to be the new player in MCU form March 2019</p>
+                        
+                          <input  class="radio" type="radio" name="option4" value="Martin_Freeman" > Captain Marvel<br>
+                          <input class="radio" type="radio" name="option4" value="Bennedict_Cumberbatch"> Flash<br>
+                          <input class="radio" type="radio" name="option4" value="Tom_Hanks"> Sheldon</br>
+                          <input class="radio" type="radio" name="option4" value="Joe_Russo"> Mayank</br>
+                                
+
+                </div>
+				<button class="button1" onclick="returnScore()">Submit</button>
+				</form>
+
+     
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

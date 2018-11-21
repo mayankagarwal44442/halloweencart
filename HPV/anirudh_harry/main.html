@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+<style>
+
+	html{
+	font-family:sans-serif;
+	color:#333;
+	}
+	
+	body{
+		background:url('412.jpeg');
+		margin:30px 50px;
+	}
+	
+	.btn{
+		background:#333;
+		color:#fff;
+		padding:0.6rem 1.3rem;
+		text-decoration:none;/*to remove the underline*/
+	}
+	
+	img{
+		max-width:100%;
+	}
+		
+	.wrapper{
+		display:grid;/*An HTML element becomes a grid container by setting the display property to grid.*/
+		grid-gap:20px;/*The space between each column/row are called gaps.*/
+	}
+	
+	.main-nav ul{	
+	list-style:none;/*the navigation bar is basically an unordered list and i dont want it to have any style.*/
+	}
+
+	.main-nav a{
+	background-color:#3C3E94;
+	width:250px;
+	border:1px solid white;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	color:white;
+	text-decoration:none;
+	background-color: rgba(255, 153, 36, 0.6)
+}
+
+.main-nav a:hover{
+	background-color:#726254;
+	transition: 0.8s all;
+}
+
+	.showcase{
+
+		background:url('99.jpg');
+		height:400px;
+		background-position:center;
+		padding:3rem;	
+
+	}
+	.boxes{
+		display:grid;/*An HTML element becomes a grid container by setting the display property to grid.*/
+		grid-gap:20px;/*The space between each column/row are called gaps.*/
+		grid-template-columns: auto auto auto ;/*this property specifies the number of columns in a grid here there are 4 items*/
+	}
+	.box{
+		color:white;
+		text-align:center;
+		padding:1rem;
+	}
+
+	.info{
+		background:#ddd;
+		display:grid;
+		grid-gap:30px;
+		grid-template-columns:auto auto;
+		padding:3rem;	
+	}
+	.portfolio{
+		display:grid;
+		grid-gap:20px;
+		grid-template-columns:auto auto auto auto auto;
+	}
+
+	.img1{
+		display:block;
+		float:left;
+		width:100%;
+		padding:10px;
+ 		overflow:hidden;
+		border-radius:5px;
+	}
+	
+.img1:hover{
+
+transform:scale(2,2);
+transition:.3s transform;
+}
+
+
+	footer{
+		margin-top:2rem;
+		background:#333;
+		color:#fff;
+		text-align:center;
+		padding:1rem;	
+	}
+	button{
+	color:#f9f9f9;
+	background:#4c21ce;
+	padding:30px;
+	height:30px;
+	width:200px;
+	text-align:center;
+	}
+</style>
+
+<script>
+	function func(){
+		if(document.getElementById("button_name").innerHTML=="LEARN MORE")
+		{
+			/*var elem=document.createElement("p");
+			var par=document.getElementById("unique");
+			par.appendChild(elem);
+			var text=document.createTextNode("Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that will consist of five films started with Fantastic Beasts and");
+			elem.appendChild(text);
+			document.getElementById("button_name").innerHTML="SHOW LESS";*/
+		var text="Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that will consist of five films started with Fantastic Beasts and";
+		document.getElementById("inserthere").innerHTML=text;
+		document.getElementById("button_name").innerHTML="SHOW LESS"
+		
+		}
+		else
+		{
+			document.getElementById("inserthere").innerHTML="";
+			document.getElementById("button_name").innerHTML="LEARN MORE"
+		}
+
+
+	}	
+
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<nav class="main-nav">
+			<ul>
+				<li>
+					<a href="\WTPROJ\MCU\home1.html">MCU</a>
+				</li>
+				<li>
+					<a href="\WTPROJ\DCU\dc.html">DCU</a>
+				</li>
+				<li>
+					<a href="\WTPROJ\HPS\hps.html">HALLOWEEN SPECIALS</a>
+				</li>
+				<li>
+					<a href="logout.php">LOGOUT</a>
+				</li>
+			</ul>
+		</nav>
+	<!--top container-->
+	<section class="top-container">
+		<header class="showcase">
+		</header>
+	</section>
+	<!-- boxes section -->
+	<section class="boxes">
+		<div class="box">
+		<a href="quiz.html">
+		<img src="ana.png">
+		</a>
+		<h3>QUIZ</h3>
+		<p>
+Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner 
+		</p>
+		</div>
+		<div class="box">
+		<a href="sale.html">
+		<img src="buss.png">
+		</a>
+		<h3>Merchandize</h3>
+		<p>
+Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner 
+		</p>
+		</div>
+		<div class="box">
+		<a href="books.html">
+		<img src="mem.png">
+		</a>
+		<h3>Books</h3>
+		<p>
+Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner 
+		</p>
+		</div>
+	</section>
+	
+	<!-- info section-->
+	<section class="info">
+		<img src="2.jpg">
+		<div id="unique">
+		<h2>Your bussiness on the web page</h2>
+		<p>Harry Potter is a British-American film series based on the Harry Potter novels by author J. K. Rowling. The series is distributed by Warner Bros.<p>
+	<p id="inserthere"></p>
+		<button id="button_name" onclick="func()">LEARN MORE</button>
+	</div>
+	</section>
+	<!-- portfolio section-->
+	<section class="portfolio">
+	<img class="img1" src="36.jpeg" height=200px width=200px/>
+	<img class="img1" src="37.jpeg" height=200px width=200px/>
+	<img class="img1" src="38.jpeg" height=200px width=200px/>
+	<img class="img1" src="39.jpg" height=200px width=200px/>
+	<img class="img1" src="40.jpg" height=200px width=200px/>
+	<img class="img1" src="3.jpeg" height=200px width=200px/>
+	<img class="img1" src="5.jpg" height=200px width=200px/>
+	<img class="img1" src="100.jpeg" height=200px width=200px/>
+	<img class="img1" src="200.jpeg" height=200px width=200px/>
+	<img class="img1" src="wall.jpg" height=200px width=200px/>	
+	</section>
+	<footer>
+	<p>Harry &copy</p>
+	</footer>
+  </div>
+</body>
+</html>	
+	

@@ -2,10 +2,41 @@
 <head>
 	<title>Sales</title>
 <style>
+html{
+	background:url('blk1.png');
+}
+#header{
+	text-align:center;
+	color:white;
+	font-family:keswicle;
+}
+#container ul{	
+	list-style:none;
+	margin-left:120px;
+	margin-bottom:-25px;
+	margin-top:25px;
+	color:white;
+}
+#container ul li{
+	background-color:rgb(102, 255, 51);
+	width:250px;
+	border:1px solid white;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	position:relative;
+}
+
+#container ul li:hover{
+	background-color:#726254;
+	transition: 0.8s all;
+}
+
 		#images{
 		display:grid;
 		grid-gap:50px;
-		grid-template-columns:repeat(auto-fit,minmax(300px,8fr));
+		grid-template-columns:auto auto auto;
 	}
 	/*puts the individual content into a box*/
 	#img1{
@@ -26,7 +57,7 @@
 	}
 
 </style>
-
+<!--
 <script>
 	function my_func(num){
 		location.href="form_proj.html"
@@ -34,95 +65,124 @@
 	}
 
 </script>
+-->
 </head>
 
 
 <body>
 	<header id="header"><h1>Harry potter merchandise</h1></header>
+		<div id="container">
+		<nav class="main-nav">
+			<ul>
+				<li>
+					<a href="main.html">HARRY POTTER MAIN PAGE</a>
+				</li>
+				<li>
+					<a href="quiz.html">QUIZ</a>
+				</li>
+				<li>
+					<a href="sale.html">MERCHANDIZE</a>
+				</li>
+				<li>
+					<a href="books.html">BOOKS</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+	<form action="Goodies.php" method="post">
 	<fieldset>
 	<section id="images">
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-			<h3>product name</h3>
+			<img src="hp1.png" height="250" width="250"><br>
+			<h3>shirt</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale" value="$99">$99</i>
+			<i id="cost_sale" value="$99">100</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj1">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-			<h3>product name</h3>
+			<img src="hp2.jpg" height="250" width="250"><br>
+			<h3>glasses</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">20</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj2">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp3.jpg height="250" width="250"><br>
+<h3>watch</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">30</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj3">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp4.jpg height="250" width="250"><br>
+<h3>shoes</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">40</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj4">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp5.jpg height="250" width="250"><br>
+<h3>game</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">50</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj5">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp6.jpg height="250" width="250"><br>
+<h3>cup</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">60</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj6">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp7.jpg height="250" width="250"><br>
+<h3>pens</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
 			<i id="cost_sale">$99</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj7">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp8.jpg height="250" width="250"><br>
+<h3>cage</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">70</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj8">
 		</div>
 	</fieldset>
 	<fieldset id="hov" onclick="my_func(99)">
 		<div id="img1">
-			<img src="40.jpg" height="250" width="250"><br>
-<h3>product name</h3>
+			<img src=hp9.jpg height="250" width="250"><br>
+<h3>bag</h3>
 			<img src="buy1.jpeg" height="100" width="100"><br>
 			<img src="star2.png" height="100" width="100"><br>
-			<i id="cost_sale">$99</i>
+			<i id="cost_sale">80</i>
+			<input class="buy_button" type="submit" value="BUY NOW" name="obj9">
 		</div>
 	</fieldset>
-
+	</form>
 	</section>
 	<hr>
 	</fieldset>

@@ -7,7 +7,7 @@
 		{
 			height: 100%;
 			width: 100%;
-			padding: 0; margin: 0; /* reset the default stylesheet */
+			padding: 0; margin: 0; 
 		}
 		#BG 
 		{
@@ -19,9 +19,49 @@
 		}
 		* 
 		{
-		  box-sizing: border-box;
+		  box-sizing: border-box;  /* include the padding and border in an element's total width and height.*/
 		}
-
+		
+		ul#nav 
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;                   /*What to do if there is an overflow? , we don't expect any, so we have made it hidden*/
+			/* other options: hidden,scroll,auto*/
+			background-color: #555;
+			position: fixed;    /* stays in the same place irrespective of scrolling*/
+			/* other options:   static 
+								relative - relative to normal position
+								fixed - relative to viewport
+								absolute-relative to ancestor 
+								sticky - sticks after offset
+			*/
+			top: 0;         /* related to viewport , so 0px between top and viewport*/
+			width: 100%;
+			left:0px;
+		}
+		ul#nav li 
+		{
+			float: left;
+		}
+		ul#nav li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		ul#nav li a:hover:not(.active) 
+		{
+			background-color: #111;
+		}
+		.active 
+		{
+			background-color: #111;
+		}
+		
 		body 
 		{
 		  height: 100%;
@@ -45,7 +85,7 @@
 		  position: absolute;
 		  bottom: 0;
 		  background: rgb(0, 0, 0); 
-		  background: rgba(0, 0, 0, 0.5); 
+		  background: rgba(0, 0, 0, 0.5); 		/*opacity = 0.5*/
 		  color: #f1f1f1;
 		  width: 100%;
 		  padding: 20px;
@@ -53,7 +93,7 @@
 		
 		.button1
 		{
-		  border-radius: 4px;
+		  border-radius: 4px;		/*rounded edges*/
 		  background-color: #f4511e;
 		  border: none;
 		  color: #FFFFFF;
@@ -73,12 +113,12 @@
 		  transition: 0.5s;
 		}
 
-		.button1 span:after {
-		  content: '\00bb';
+		.button1 span:after {			/*after pseudo class*/
+		  content: '\00bb';				/*arrow element*/
 		  position: absolute;
-		  opacity: 0;
+		  opacity: 0;					/*don't show now*/
 		  top: 0;
-		  right: -20px;
+		  right: -20px;				
 		  transition: 0.5s;
 		}
 
@@ -106,10 +146,10 @@
 					}
 					-->
 					</script>
-					<button class="button1" id="goodies" onclick="myfunc('Goodies.php')"> <span>Goodies </span></button>
+					<button class="button1" id="goodies" onclick="myfunc('Goodies.html')"> <span>Goodies </span></button>
 					<button class="button1" id="books" onclick="myfunc('Books.html')"> <span>BOOKS </span></button>
-					<button class="button1" id="Trivia" onclick="myfunc('Trivia.html')"> <span>Trivia </span></button>
-					<button class="button1" id="clips" onclick="myfunc('Clips.html')"> <span>Clips</span></button>
+					<button class="button1" id="Trivia" onclick="myfunc('trivia1.html')"> <span>Trivia </span></button>
+					<button class="button1" id="logout" onclick="myfunc('/WTPROJ/logout.php')"> <span>Logout</span></button>
 			</div>
 		</div>
 	</body>

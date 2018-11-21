@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="books.css">  
+
+        <style>
+        	.container
+        	{
+        		padding-top:100px;
+        		background-image: url("img2.jpg");
+
+    			height: 100%; 
+
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+    			padding-bottom: 400px;
+        	}
+
+        	.buy_button:active {
+				  background-color: #3e8e41;
+				  box-shadow: 0 5px #666;
+				  transform: translateY(4px);
+				}
+
+
+
+    	</style>
+
+      <script>
+      		/*
+          function func()
+          {
+            console.log("HI")
+          }*/
+
+          function nothidden(i)
+          {
+          	var objs1 = document.getElementsByClassName("description");
+          	var objs2 = document.getElementsByClassName("price_n_offers");
+          	objs1[i].style.visibility="visible";
+          	objs2[i].style.visibility="visible";
+
+
+
+          }
+
+          function read(p)
+          {
+          	location.href=p;
+          }
+
+      </script>
+</head>
+<body>
+
+	<ul id="nav">
+	  <li ><a href="home1.html">Home</a></li>
+	  <li><a  href="goodies.html">Goodies</a></li>
+	  <li><a href="trivia1.html">Trivia</a></li>
+	  <li><a class="active" href="books.html">Books</a></li>
+	</ul>
+
+    <p id="credits">Credits:<span>100</span></p> 
+
+    <div class="container">
+
+
+
+    	<div class="Object">
+
+    			<div class="img" >
+                	
+                	 <img onclick="nothidden(0)" class = "objimg" src="Images/home-page-background-transparent.jpg" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+
+
+
+              <div class="description">
+
+        				
+        				<h2 >The Prodigal son returns: Mark42</h2>
+                	
+
+                 	
+	                	<ul class="specs" >
+	                		<li>The Best selling comic book post the "incident"</li>
+	                		<li>Tony stark continues to struggle with his inner self when he indulges in making one of his best, the mark 42.</li>
+	                		
+                      
+	                		
+	                	</ul>
+	                
+
+
+              </div>
+
+              <div class="price_n_offers">
+              		<button class="buy_button" type="button" onclick="read('pdf1.pdf')"> Read!</button>
+              </div>
+
+
+
+
+
+
+    	</div>
+
+ 
+    	<div class="Object">
+
+    			<div class="img" >
+                	
+                	 <img onclick="nothidden(1)" class = "objimg" src="Images/home-page-background-transparent.jpg" alt="Thanos_Gauntlet" width="200" height="200">   
+                </div>
+
+
+
+              <div class="description">
+
+        				
+        				<h2 >The Prodigal son returns: Mark42</h2>
+                	
+
+                 	
+	                	<ul class="specs" >
+	                		<li>The Best selling comic book post the "incident"</li>
+	                		<li>Tony stark continues to struggle with his inner self when he indulges in making one of his best, the mark 42.</li>
+	                		
+                      
+	                		
+	                	</ul>
+	                
+
+
+              </div>
+
+              <div class="price_n_offers">
+              		<button class="buy_button" type="button" onclick="read('pdf2.pdf')"> Read!</button>
+              </div>
+
+
+
+
+
+
+    	</div>
+
+  
+
+
+
+
+
+    
+</body>
+</html>
