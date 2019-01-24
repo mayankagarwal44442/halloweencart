@@ -1,2 +1,3 @@
 # halloweencart
-Website for Halloween Merch.
+Website for Halloween Merchandise.
+	
