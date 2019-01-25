@@ -1,3 +1,3 @@
 # halloweencart
-Website for Halloween Merchandise
+Website for Halloween 
 	
